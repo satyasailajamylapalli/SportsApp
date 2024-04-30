@@ -1,0 +1,40 @@
+server:
+  port: 9099
+
+jwt:
+  secret: secret
+spring:
+  datasource:
+    username: admin
+    password: 12345678
+    url: jdbc:mysql://database-1.ctw88mmu8eul.ap-southeast-2.rds.amazonaws.com:3306/sports
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+app:
+  seeddata:
+    id1: meghna@email.com
+    id2: john@email.com
+    password1: meghna@123
+    password2: john@123
+    role1: USER
+    role2: ADMIN
+    logMessage: Loaded users...
+  jwttoken:
+    message: Login Successful
+  controller:
+    exception:
+      message1: Id and Password Empty
+      message2: Id and Password not found
+      message3: Id and Password invalid
+  service:
+    message1: User Already Exists
+    message2: Invalid Id and Password
+    
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

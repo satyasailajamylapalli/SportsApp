@@ -1,0 +1,24 @@
+.buttons{
+    display: flex;
+    justify-content: top;
+    align-items: right;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .main-header{
+    font-family: 'Montserrat', sans-serif;
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+    margin-left: 300px;
+    margin-right: 100px;
+    background: white;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}

@@ -1,0 +1,15 @@
+server:
+  port: 3099
+
+spring:
+  application:
+    name: sports-service
+  datasource:
+    username: admin
+    password: 12345678
+    url: jdbc:mysql://database-1.ctw88mmu8eul.ap-southeast-2.rds.amazonaws.com:3306/sports
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

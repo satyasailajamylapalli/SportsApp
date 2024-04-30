@@ -1,0 +1,27 @@
+server:
+  port: 9090
+jwt:
+  secret: secret
+
+app:
+  validationConfirmationMessage1: This is Admin Data!
+  validationConfirmationMessage2: This is User Data!
+  
+#springfox:
+#  documentation:
+#    swagger-ui:
+#     enabled: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+spring:
+  datasource:
+    username: admin
+    password: 12345678
+    url: jdbc:mysql://database-1.ctw88mmu8eul.ap-southeast-2.rds.amazonaws.com:3306/sports
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
